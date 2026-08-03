@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O fim da privacidade e os registros inconsequentes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="chapters">
+  <a href="#parte1" class="active"><span class="roman">I</span></a>
+  <a href="#parte2"><span class="roman">II</span></a>
+  <a href="#parte3"><span class="roman">III</span></a>
+</nav>
+
+<nav id="chapters-mobile">
+  <a href="#parte1" class="active"><span class="roman">I</span>tema</a>
+  <a href="#parte2"><span class="roman">II</span>problema</a>
+  <a href="#parte3"><span class="roman">III</span>solução</a>
+</nav>
+
+<div id="log-ticker">
+  <div class="log-head">registro contínuo</div>
+  <div id="log-feed"></div>
+</div>
+
+<main>
+  <header class="hero">
+    <div class="eyebrow">plataforma informativa — privacidade de dados</div>
+    <h1>O fim da privacidade<br>e os registros<br>inconsequentes.</h1>
+    <p class="lede">Cada toque na tela vira uma linha de registro em algum banco de dados. Sozinha, cada linha parece inofensiva. Acumuladas, elas formam um retrato mais preciso de você do que qualquer pessoa que te conhece.</p>
+    <div class="hero-meter">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+    <div class="hero-meter-label"><span>localização</span><span>consumo</span><span>saúde</span><span>contatos</span><span>navegação</span></div>
+  </header>
+
+  <!-- ===================== PARTE I ===================== -->
+  <section class="chapter" id="parte1">
+    <div class="wrap">
+      <div class="chapter-label">Parte I — O tema</div>
+      <h2 class="chapter-title">Privacidade não desapareceu. Ela foi redefinida.</h2>
+      <p class="chapter-intro">Antes de falar em solução, é preciso entender o mecanismo: o que muda quando a privacidade migra do mundo físico para o digital, e por que o dado isolado é diferente do dado acumulado.</p>
+
+      <div class="sub" id="s11">
+        <div class="sub-num">1.1</div>
+        <h3>Do mundo físico ao mundo digital</h3>
+        <p>No mundo físico, privacidade tem limites claros: uma porta fechada, uma conversa em voz baixa, uma carta lacrada. No mundo digital, esses limites não existem por padrão — eles precisam ser ativamente construídos, e a maioria das pessoas nunca os configura.</p>
+        <p>A diferença central não é só de escala, mas de <strong>permanência</strong>. Uma conversa física se dissolve no ar. Uma interação digital vira um registro — armazenado, copiável, pesquisável, e frequentemente guardado por tempo indefinido.</p>
+      </div>
+
+      <div class="sub" id="s12">
+        <div class="sub-num">1.2</div>
+        <h3>Como o dado é captado</h3>
+        <p>A coleta acontece em camadas, a maior parte invisível para quem está sendo observado:</p>
+        <div class="flow">
+          <div class="node">cookies &amp; pixels</div><span class="arrow">→</span>
+          <div class="node">fingerprinting do dispositivo</div><span class="arrow">→</span>
+          <div class="node">geolocalização</div><span class="arrow">→</span>
+          <div class="node">sensores (microfone, acelerômetro)</div><span class="arrow">→</span>
+          <div class="node">perfil consolidado</div>
+        </div>
+        <p style="margin-top:18px;"><strong>Cookies e pixels de rastreamento</strong> identificam você entre sites diferentes. <strong>Fingerprinting</strong> combina características do seu navegador e aparelho para te identificar mesmo sem cookies. <strong>Geolocalização</strong> e <strong>sensores</strong> de smartphone fornecem contexto físico — onde você está, com que frequência, em que velocidade você se move.</p>
+      </div>
+
+      <div class="sub" id="s13">
+        <div class="sub-num">1.3</div>
+        <h3>A economia da vigilância</h3>
+        <p>Dado pessoal é matéria-prima de um mercado bilionário. <strong>Data brokers</strong> compram, cruzam e revendem perfis de comportamento para empresas de publicidade, seguradoras e instituições financeiras — geralmente sem que o titular do dado saiba que isso aconteceu.</p>
+        <div class="broker-grid">
+          <div class="cell"><div class="v">4000+</div><div class="l">pontos de dado por perfil, em média, segundo estimativas de data brokers nos EUA</div></div>
+          <div class="cell"><div class="v">0</div><div class="l">interações diretas entre o titular do dado e quem compra seu perfil</div></div>
+          <div class="cell"><div class="v">3ª via</div><div class="l">a maior parte da venda ocorre fora da relação original entre você e o app</div></div>
+        </div>
+      </div>
+
+      <div class="sub" id="s14">
+        <div class="sub-num">1.4</div>
+        <h3>O registro inconsequente</h3>
+        <p>É o conceito central desta plataforma: o dado que, isolado, parece banal — um horário de saída, um aplicativo aberto, uma busca rápida. Nenhum desses registros, sozinho, revela algo sensível.</p>
+        <p>O problema é a <strong>acumulação</strong>. Cruzados, milhares de registros banais formam padrões: rotina, estado de saúde, orientação política, situação financeira. O dano não está no registro individual — está na ausência de limite sobre quanto pode ser acumulado, por quanto tempo, e por quem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PARTE II ===================== -->
+  <section class="chapter" id="parte2">
+    <div class="wrap">
+      <div class="chapter-label">Parte II — O problema</div>
+      <h2 class="chapter-title">Isso já está acontecendo com pessoas reais.</h2>
+      <p class="chapter-intro">Para sair da abstração, a seguir está um dia comum traduzido em registros, casos de consequência real e o cenário brasileiro em números.</p>
+
+      <div class="sub" id="s21">
+        <div class="sub-num">2.1</div>
+        <h3>Um dia comum, vários registros</h3>
+        <p>Marina é uma persona fictícia, mas o padrão abaixo é genérico — reflete o uso comum de smartphone.</p>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-time">07:14</div>
+            <div class="tl-action">Acorda e checa o clima</div>
+            <div class="tl-log">localização precisa · ts=07:14:02 · app=clima</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">07:52</div>
+            <div class="tl-action">Pede corrida até o trabalho</div>
+            <div class="tl-log">origem+destino · histórico de rota · app=mobilidade</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">12:30</div>
+            <div class="tl-action">Pesquisa sintomas no navegador</div>
+            <div class="tl-log">termo de busca vinculado a perfil publicitário</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">19:05</div>
+            <div class="tl-action">Pede comida por aplicativo</div>
+            <div class="tl-log">padrão de consumo · forma de pagamento · endereço</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">22:40</div>
+            <div class="tl-action">Usa app de monitoramento de sono</div>
+            <div class="tl-log">dado biométrico · ciclo de sono · compartilhado com terceiros nos termos de uso</div>
+          </div>
+        </div>
+        <p style="margin-top:22px;">Nenhuma dessas ações é incomum. Juntas, em poucas semanas, elas formam um perfil detalhado de rotina, saúde e consumo — sem que Marina tenha tido uma única conversa sobre isso.</p>
+      </div>
+
+      <div class="sub" id="s22">
+        <div class="sub-num">2.2</div>
+        <h3>Quando o dado vira prejuízo</h3>
+        <div class="case">
+          <h4>Saúde e seguro</h4>
+          <p>Dados de aplicativos de monitoramento de atividade física, vendidos a corretores de dados, já foram usados por seguradoras para ajustar prêmios e condições de apólices de saúde e vida — fora do contexto original de coleta.</p>
+        </div>
+        <div class="case">
+          <h4>Consumo e crédito</h4>
+          <p>Padrões de compra e localização podem alimentar modelos de score de crédito alternativos, afetando decisões de financiamento sem que a pessoa saiba quais dados foram usados ou possa contestá-los.</p>
+        </div>
+        <div class="case">
+          <h4>Vazamento e exposição</h4>
+          <p>Vazamentos de bases de dados de aplicativos de entrega e e-commerce já expuseram endereço residencial, CPF e histórico de compras de milhões de usuários brasileiros em incidentes únicos.</p>
+        </div>
+      </div>
+
+      <div class="sub" id="s23">
+        <div class="sub-num">2.3</div>
+        <h3>O cenário brasileiro</h3>
+        <div class="stat-row">
+          <div class="stat"><div class="num mono">+1.000</div><div class="desc">incidentes de vazamento de dados registrados publicamente no Brasil nos últimos anos</div><div class="src">fonte: relatórios de violação de dados, ANPD</div></div>
+          <div class="stat"><div class="num mono">milhões</div><div class="desc">de registros de CPF expostos em vazamentos de grande escala já noticiados</div><div class="src">fonte: cobertura jornalística de incidentes públicos</div></div>
+          <div class="stat"><div class="num mono">crescente</div><div class="desc">volume de reclamações formais recebidas pela ANPD desde a entrada em vigor da LGPD</div><div class="src">fonte: relatórios da ANPD</div></div>
+        </div>
+        <p style="margin-top:18px; font-size:13px; color:var(--ink-mute);">Números aproximados, apresentados para dimensionar a escala do problema — não como dado estatístico definitivo. Para citações em apresentação formal, busque os números atualizados diretamente nos relatórios da ANPD.</p>
+      </div>
+
+      <div class="sub" id="s24">
+        <div class="sub-num">2.4</div>
+        <h3>"Eu não tenho nada a esconder"</h3>
+        <p>Esse argumento parte de uma premissa errada: a de que privacidade só protege quem fez algo errado. Na prática, privacidade protege contra <strong>uso fora de contexto</strong> — o problema não é o que você fez, é quem decide o que aquele dado significa, anos depois, fora da situação em que foi gerado.</p>
+        <p>Um dado de localização coletado para entregar comida pode, anos depois, ser usado para inferir religião, orientação sexual ou opinião política — sem o seu controle sobre essa reinterpretação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PARTE III ===================== -->
+  <section class="chapter solution" id="parte3">
+    <div class="wrap">
+      <div class="chapter-label">Parte III — A solução</div>
+      <h2 class="chapter-title">A LGPD devolve controle ao titular do dado.</h2>
+      <p class="chapter-intro">A lei não elimina a coleta de dados — ela exige finalidade, limite e, principalmente, dá ao titular caminhos concretos para agir. Veja como ela funciona na prática, quais direitos existem e como exercê-los.</p>
+
+      <div class="sub" id="s31">
+        <div class="sub-num">3.1</div>
+        <h3>O que a LGPD resolve</h3>
+        <p>A Lei Geral de Proteção de Dados (Lei 13.709/2018) estabelece regras para como empresas e órgãos públicos podem coletar, usar, armazenar e compartilhar dados pessoais no Brasil. O princípio central é a <strong>finalidade</strong>: um dado só pode ser coletado para um propósito específico, informado e legítimo — e não pode ser livremente reaproveitado para outro fim.</p>
+        <p>A lei se aplica a qualquer operação de tratamento realizada no Brasil, ou que envolva dados de pessoas localizadas no país — independentemente de onde a empresa esteja sediada.</p>
+      </div>
+
+      <div class="sub" id="s32">
+        <div class="sub-num">3.2</div>
+        <h3>Quando o tratamento de dado é permitido</h3>
+        <p>O Art. 7º da LGPD lista as únicas hipóteses que autorizam uma empresa a tratar seu dado pessoal. Fora dessas dez situações, o tratamento é ilegal. Consentimento é a mais conhecida — mas não é a única, e entender as outras ajuda a identificar quando uma empresa está se apoiando numa base legítima ou só coletando por padrão.</p>
+        <div class="bases-grid">
+          <div class="base-cell highlight">
+            <div class="base-tag">Art. 7º, I</div>
+            <div class="base-name">Consentimento</div>
+            <div class="base-desc">Manifestação livre, informada e inequívoca do titular para uma finalidade determinada. É a base mais visível — o "aceito" nos termos — mas também a mais restrita: não vale para qualquer finalidade futura, só para a declarada.</div>
+          </div>
+          <div class="base-cell">
+            <div class="base-tag">Art. 7º, II</div>
+            <div class="base-name">Obrigação legal ou regulatória</div>
+            <div class="base-desc">Quando outra lei exige a coleta — ex.: dados fiscais que empresas são obrigadas a manter para a Receita Federal.</div>
+          </div>
+          <div class="base-cell">
+            <div class="base-tag">Art. 7º, V</div>
+            <div class="base-name">Execução de contrato</div>
+            <div class="base-desc">Dados necessários para cumprir um contrato com o titular — ex.: seu endereço para uma entrega que você mesmo solicitou.</div>
+          </div>
+          <div class="base-cell highlight">
+            <div class="base-tag">Art. 7º, IX</div>
+            <div class="base-name">Legítimo interesse</div>
+            <div class="base-desc">A base mais discutida: permite tratamento sem consentimento quando a empresa tem interesse real e legítimo, desde que não prevaleçam os direitos fundamentais do titular. Exige um teste de balanceamento — não é um cheque em branco.</div>
+          </div>
+          <div class="base-cell">
+            <div class="base-tag">Art. 7º, X</div>
+            <div class="base-name">Proteção ao crédito</div>
+            <div class="base-desc">Base específica que autoriza consultas a serviços como SPC e Serasa para análise de risco de crédito.</div>
+          </div>
+          <div class="base-cell">
+            <div class="base-tag">Art. 7º, III a IV, VI a VIII</div>
+            <div class="base-name">Demais hipóteses</div>
+            <div class="base-desc">Administração pública, estudos por órgão de pesquisa, proteção da vida, tutela da saúde e exercício regular de direitos em processo — cada uma com requisitos próprios previstos na lei.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub" id="s33">
+        <div class="sub-num">3.3</div>
+        <h3>Os 9 direitos do Art. 18</h3>
+        <p>Todo titular de dados no Brasil pode exercer estes direitos diretamente junto às empresas que tratam seus dados — independentemente de qual das hipóteses acima fundamenta o tratamento.</p>
+        <div class="rights-grid" id="rights-grid">
+          <!-- populated by JS -->
+        </div>
+      </div>
+
+      <div class="sub" id="s34">
+        <div class="sub-num">3.4</div>
+        <h3>Como exercer um direito — passo a passo</h3>
+        <div class="steps">
+          <div class="step">
+            <div class="n">01</div>
+            <div class="t"><h4>Procure o canal de privacidade da empresa</h4><p>Por lei, toda empresa que trata dados pessoais deve indicar um <strong>encarregado</strong> (ou "DPO" — Data Protection Officer) e disponibilizar um canal claro para solicitações, geralmente no rodapé do site, em "privacidade" ou "meus dados".</p></div>
+          </div>
+          <div class="step">
+            <div class="n">02</div>
+            <div class="t"><h4>Formalize o pedido por escrito</h4><p>Especifique qual dos 9 direitos você está exercendo. Para confirmação de tratamento e acesso aos dados, a empresa tem até <strong>15 dias</strong> para responder de forma completa (Art. 19); uma resposta simplificada pode ser imediata.</p></div>
+          </div>
+          <div class="step">
+            <div class="n">03</div>
+            <div class="t"><h4>Sem resposta? Acione a ANPD</h4><p>Se a empresa não responder no prazo ou a resposta for insatisfatória, é possível abrir um requerimento na Autoridade Nacional de Proteção de Dados pelo <strong>Sistema de Requerimentos da ANPD</strong>, disponível no site oficial gov.br/anpd.</p></div>
+          </div>
+          <div class="step">
+            <div class="n">04</div>
+            <div class="t"><h4>Acompanhe o protocolo</h4><p>O Sistema de Requerimentos gera um número de protocolo — use-o para acompanhar o andamento e eventuais decisões da ANPD sobre o caso.</p></div>
+          </div>
+        </div>
+        <div class="example-box">
+          <div class="example-tag">exemplo prático</div>
+          <p>Você percebe que um app de delivery ainda tem seu endereço antigo cadastrado, meses após a mudança. Isso é uma solicitação de <strong>correção</strong> (Art. 18, III) — não de exclusão. Você escreve para o canal de privacidade do app pedindo a atualização, cita o direito pelo nome, e a empresa deve corrigir em prazo razoável, sem necessidade de você reenviar documentos que já possui em cadastro.</p>
+          <p>Já se você quiser que uma rede social pare de usar seus dados de navegação para anúncios personalizados — mas sem excluir a conta — o caminho é a <strong>revogação do consentimento</strong> (Art. 18, IX) especificamente para aquela finalidade, não um pedido de eliminação total.</p>
+        </div>
+      </div>
+
+      <div class="sub" id="s35">
+        <div class="sub-num">3.5</div>
+        <h3>Quando a empresa não cumpre</h3>
+        <p>A fiscalização e a aplicação de sanções são competência exclusiva da ANPD — não do Judiciário diretamente. O Art. 52 prevê uma escala de penalidades, da mais branda à mais severa:</p>
+        <div class="sanction-list">
+          <div class="sanction-item"><span class="s-idx mono">01</span><span class="s-txt"><strong>Advertência</strong>, com prazo definido para correção</span></div>
+          <div class="sanction-item"><span class="s-idx mono">02</span><span class="s-txt"><strong>Multa simples</strong>, calculada sobre o faturamento da empresa</span></div>
+          <div class="sanction-item"><span class="s-idx mono">03</span><span class="s-txt"><strong>Multa diária</strong>, para pressionar a cessação de uma violação contínua</span></div>
+          <div class="sanction-item"><span class="s-idx mono">04</span><span class="s-txt"><strong>Publicização da infração</strong>, depois de apurada e confirmada</span></div>
+          <div class="sanction-item"><span class="s-idx mono">05</span><span class="s-txt"><strong>Bloqueio ou eliminação</strong> dos dados envolvidos na infração</span></div>
+          <div class="sanction-item"><span class="s-idx mono">06</span><span class="s-txt"><strong>Suspensão</strong> parcial ou total do tratamento, por até 6 meses</span></div>
+        </div>
+        <div class="fine-highlight">
+          <div class="num mono">2% · R$ 50 mi</div>
+          <div class="desc">A multa simples pode chegar a 2% do faturamento bruto da empresa no último exercício no Brasil, excluídos os tributos — com teto de R$ 50 milhões por infração.</div>
+          <div class="src">fonte: Art. 52, II da LGPD e Regulamento de Dosimetria da ANPD</div>
+        </div>
+      </div>
+
+      <div class="sub" id="s36">
+        <div class="sub-num">3.6</div>
+        <h3>Checklist pessoal de redução de exposição</h3>
+        <p>Ações práticas, independentes da lei, que reduzem a quantidade de registro gerado no dia a dia. Clique para marcar — o progresso fica salvo neste navegador.</p>
+        <div class="checklist" id="checklist"></div>
+        <div class="checklist-progress">
+          <span class="progress-text" id="checklist-progress"></span>
+          <button type="button" class="checklist-reset" id="checklist-reset">reiniciar</button>
+        </div>
+      </div>
+
+      <div class="sub" id="s37">
+        <div class="sub-num">3.7</div>
+        <h3>Para quem desenvolve produto</h3>
+        <div class="dev-note">
+          <p><strong>Privacy by design</strong> significa tratar a minimização de dados como requisito de arquitetura, não como ajuste posterior: coletar só o necessário para a finalidade declarada, definir prazos de retenção desde o início, e desenhar consentimento como escolha real — não como obstáculo a ser clicado sem leitura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>protótipo — plataforma informativa de privacidade de dados</span>
+      <span>LGPD · Lei 13.709/2018 · gov.br/anpd</span>
+    </div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
